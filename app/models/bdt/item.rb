@@ -1,23 +1,46 @@
 # frozen_string_literal: true
 
 module Bdt
-  class Item
-    include ActiveModel::Model
+  class Item < Shopify::Item
+    def store_item_hash
+      variant = variants.last
+      {
+        product_id: variant&.id,
+        available: variant&.available,
+        shipping: variant&.requires_shipping,
+        price: variant&.price,
+        weight: variant&.grams,
+        source_data: source_data,
+        latest_update_at: published_at
+      }
+    end
 
-    attr_accessor :id, :title, :handle, :vendor, :product_type, :body_html,
-                  :tags, :images, :variants, :options,
-                  :published_at, :created_at, :updated_at
+    def genre
+      case product_type
+      when 'Thematic' then :thematic
+      when 'Family', 'Children' then :family
+      when 'War' then :war
+      when 'Strategy' then :euro
+      else
+        :other
+      end
+    end
 
-    attr_accessor :source
+    def item_hash
+      {
+        name: title,
+        slug: handle,
+        publisher: vendor,
+        genre: genre
+      }
+    end
 
-    def initialize(attributes = {})
-      super(attributes)
-      self.source_data = attributes
-      self.images = images.map { |image| Image.new(image) }
-      self.variants = variants.map { |image| Variant.new(image) }
-      self.published_at = Time.parse(published_at)
-      self.created_at = Time.parse(created_at)
-      self.updated_at = Time.parse(updated_at)
+    private
+
+    def formatted_source_data
+      {
+
+      }
     end
   end
 end

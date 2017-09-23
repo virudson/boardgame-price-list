@@ -27,7 +27,10 @@ module Bdt
 
     def items
       @items ||= begin
-        JSON.parse(File.read(file_path)).map { |data| Item.new(data) }
+        JSON.parse(File.read(file_path)).map do |data|
+          item = Item.new(data)
+          item unless item.product_type == 'Sleeve'
+        end.compact
       end
     end
 
