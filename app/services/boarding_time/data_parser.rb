@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Bdt
+module BoardingTime
   class DataParser
     FORMATTED_DIR = Settings.sources.formatted_dir
     RAW_DIR = Settings.sources.raw_dir

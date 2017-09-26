@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Bdt
+module BoardingTime
   class Bot < Shopify::Api
     def initialize
       super(

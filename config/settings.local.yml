@@ -1,0 +1,12 @@
+battlefield_bangkok:
+  api_host: 'https://battlefield-bangkok.myshopify.com'
+  store_name: battlefiled_bkk
+boardgame_geek:
+  api_host: 'https://www.boardgamegeek.com'
+  store_name: boardgame_geek
+boarding_time:
+  api_host: 'https://boardingtimegames.com'
+  store_name: bdt
+sources:
+  raw_dir: 'public/sources/'
+  formatted_dir: 'public/sources/formatted/'

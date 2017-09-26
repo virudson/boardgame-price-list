@@ -18,6 +18,8 @@ gem 'nokogiri'
 # gem 'nori' XML to hash
 gem 'rest-client'
 gem 'money-rails'
+gem 'nori'
+gem 'ox'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

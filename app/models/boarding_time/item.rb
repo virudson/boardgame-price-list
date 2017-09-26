@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Bdt
+module BoardingTime
   class Item < Shopify::Item
     def store_item_hash
       variant = variants.last
