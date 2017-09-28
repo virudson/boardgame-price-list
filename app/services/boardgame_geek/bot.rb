@@ -5,7 +5,8 @@ module BoardgameGeek
     def initialize
       super(
         host: Settings.boardgame_geek.api_host,
-        store_name: Settings.boardgame_geek.store_name
+        store_name: Settings.boardgame_geek.store_name,
+        item_count: 150001
       )
     end
   end

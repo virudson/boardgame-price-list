@@ -1,9 +1,9 @@
 battlefield_bangkok:
   api_host: 'https://battlefield-bangkok.myshopify.com'
-  store_name: battlefiled_bkk
+  store_name: btf_bkk
 boardgame_geek:
   api_host: 'https://www.boardgamegeek.com'
-  store_name: boardgame_geek
+  store_name: bgg
 boarding_time:
   api_host: 'https://boardingtimegames.com'
   store_name: bdt
