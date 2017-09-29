@@ -10,12 +10,13 @@ module BoardGameGeek
       super(attributes)
       self.results = if results.is_a?(Array)
                        results.map do |obj|
-                         OpenStruct.new(obj).tab do |choice|
-                           OpenStruct.new(choice.result)
+                         poll = OpenStruct.new(obj).tab |pol|
+                         poll.result = poll.result.map do |vote|
+                           OpenStruct.new(vote)
                          end
+                         poll
                        end
                      else
-                       binding.pry
                        results['result'].map { |obj| OpenStruct.new(obj) }
                      end
     end
