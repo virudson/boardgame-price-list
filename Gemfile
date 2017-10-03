@@ -19,7 +19,6 @@ gem 'nokogiri'
 gem 'rest-client'
 gem 'money-rails'
 gem 'nori'
-gem 'ox'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

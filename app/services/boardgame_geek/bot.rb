@@ -6,7 +6,7 @@ module BoardgameGeek
       super(
         host: Settings.boardgame_geek.api_host,
         store_name: Settings.boardgame_geek.store_name,
-        item_count: 150001
+        item_count: 0
       )
     end
   end

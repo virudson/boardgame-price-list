@@ -4,10 +4,11 @@ module BoardgameGeek
   class Api
     MAX = 250_000
     STEP = 500
+    
     attr_accessor :host, :store_name, :item_count
     attr_reader :items
 
-    def initialize(host:, store_name:, item_count: 1)
+    def initialize(host:, store_name:, item_count: 0)
       @host = host
       @store_name = store_name
       @item_count = item_count
@@ -21,7 +22,7 @@ module BoardgameGeek
 
     def fetch
       item_count.step(MAX, STEP) do |id|
-        if response = fetch_from_source(id, id + STEP)
+        if response = fetch_from_source(id + 1, id + STEP)
           # @items << response
           write_to_file(response)
         end
@@ -45,7 +46,7 @@ module BoardgameGeek
     end
 
     def filename
-      "#{store_name}-[#{item_count}-#{item_count + STEP}].json"
+      "#{store_name}-[#{item_count + 1}-#{item_count + STEP}].json"
     end
 
     def file_path

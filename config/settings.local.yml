@@ -10,3 +10,7 @@ boarding_time:
 sources:
   raw_dir: 'public/sources/'
   formatted_dir: 'public/sources/formatted/'
+
+THAI_BULK_API_URL: 'https://secure.thaibulksms.com/sms_api_test.php'
+THAI_BULK_USERNAME: 'thaibulksms'
+THAI_BULK_PASSWORD: 'thisispassword'
