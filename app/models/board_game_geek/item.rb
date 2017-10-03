@@ -15,8 +15,8 @@ module BoardGameGeek
       self.poll = poll.map { |obj| Poll.new(obj) }
     end
 
-    def publish_year
-      @publish_year ||= yearpublished['value']&.to_i
+    def published_year
+      @published_year ||= yearpublished['value']&.to_i
     end
 
     def min_players

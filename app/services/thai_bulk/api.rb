@@ -7,8 +7,8 @@ module ThaiBulk
     }.freeze
     
     def self.check_balance(params = {})
-      warn 'WARNING: '\
-           'THAIBULK.COM API always return `Unable to check credit balance`'
+      warn 'WARNING: THAIBULK.COM API '\
+           'always return `Unable to check credit balance`'
       params[:tag] ||= 'credit_remain'
       call_api(params)
     end

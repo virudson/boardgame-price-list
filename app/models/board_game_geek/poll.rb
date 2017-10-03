@@ -8,17 +8,7 @@ module BoardGameGeek
 
     def initialize(attributes = {})
       super(attributes)
-      self.results = if results.is_a?(Array)
-                       results.map do |obj|
-                         poll = OpenStruct.new(obj).tab |pol|
-                         poll.result = poll.result.map do |vote|
-                           OpenStruct.new(vote)
-                         end
-                         poll
-                       end
-                     else
-                       results['result'].map { |obj| OpenStruct.new(obj) }
-                     end
+      # self.results =
     end
 
     def total_votes
