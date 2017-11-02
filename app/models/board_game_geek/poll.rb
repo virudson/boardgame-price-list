@@ -6,11 +6,6 @@ module BoardGameGeek
 
     attr_accessor :name, :title, :totalvotes, :results
 
-    def initialize(attributes = {})
-      super(attributes)
-      # self.results =
-    end
-
     def total_votes
       @total_votes ||= totalvotes&.to_i
     end

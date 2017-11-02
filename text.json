@@ -30,87 +30,105 @@
             {
               "value": "Best",
               "numvotes": "0"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "1"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "76"
             }
           ]
-        }, {
+        },
+        {
           "numplayers": "2",
           "result": [
             {
               "value": "Best",
               "numvotes": "0"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "1"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "77"
             }
           ]
-        }, {
+        },
+        {
           "numplayers": "3",
           "result": [
             {
               "value": "Best",
               "numvotes": "0"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "25"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "69"
             }
           ]
-        }, {
+        },
+        {
           "numplayers": "4",
           "result": [
             {
               "value": "Best",
               "numvotes": "23"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "80"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "9"
             }
           ]
-        }, {
+        },
+        {
           "numplayers": "5",
           "result": [
             {
               "value": "Best",
               "numvotes": "105"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "12"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "2"
             }
           ]
-        }, {
+        },
+        {
           "numplayers": "5+",
           "result": [
             {
               "value": "Best",
               "numvotes": "1"
-            }, {
+            },
+            {
               "value": "Recommended",
               "numvotes": "0"
-            }, {
+            },
+            {
               "value": "NotRecommended",
               "numvotes": "54"
             }
           ]
         }
       ]
-    }, {
+    },
+    {
       "name": "suggested_playerage",
       "title": "UserSuggestedPlayerAge",
       "totalvotes": "27",
@@ -119,43 +137,55 @@
           {
             "value": "2",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "3",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "4",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "5",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "6",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "8",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "10",
             "numvotes": "0"
-          }, {
+          },
+          {
             "value": "12",
             "numvotes": "5"
-          }, {
+          },
+          {
             "value": "14",
             "numvotes": "15"
-          }, {
+          },
+          {
             "value": "16",
             "numvotes": "4"
-          }, {
+          },
+          {
             "value": "18",
             "numvotes": "2"
-          }, {
+          },
+          {
             "value": "21andup",
             "numvotes": "1"
           }
         ]
       }
-    }, {
+    },
+    {
       "name": "language_dependence",
       "title": "LanguageDependence",
       "totalvotes": "47",
@@ -165,19 +195,23 @@
             "level": "1",
             "value": "Nonecessaryin-gametext",
             "numvotes": "36"
-          }, {
+          },
+          {
             "level": "2",
             "value": "Somenecessarytext-easilymemorizedorsmallcribsheet",
             "numvotes": "5"
-          }, {
+          },
+          {
             "level": "3",
             "value": "Moderatein-gametext-needscribsheetorpasteups",
             "numvotes": "6"
-          }, {
+          },
+          {
             "level": "4",
             "value": "Extensiveuseoftext-massiveconversionneededtobeplayable",
             "numvotes": "0"
-          }, {
+          },
+          {
             "level": "5",
             "value": "Unplayableinanotherlanguage",
             "numvotes": "0"
@@ -203,59 +237,73 @@
       "type": "boardgamecategory",
       "id": "1021",
       "value": "Economic"
-    }, {
+    },
+    {
       "type": "boardgamecategory",
       "id": "1026",
       "value": "Negotiation"
-    }, {
+    },
+    {
       "type": "boardgamecategory",
       "id": "1001",
       "value": "Political"
-    }, {
+    },
+    {
       "type": "boardgamemechanic",
       "id": "2080",
       "value": "AreaControl/AreaInfluence"
-    }, {
+    },
+    {
       "type": "boardgamemechanic",
       "id": "2012",
       "value": "Auction/Bidding"
-    }, {
+    },
+    {
       "type": "boardgamemechanic",
       "id": "2072",
       "value": "DiceRolling"
-    }, {
+    },
+    {
       "type": "boardgamemechanic",
       "id": "2040",
       "value": "HandManagement"
-    }, {
+    },
+    {
       "type": "boardgamemechanic",
       "id": "2020",
       "value": "SimultaneousActionSelection"
-    }, {
+    },
+    {
       "type": "boardgamefamily",
       "id": "10643",
       "value": "Country:Germany"
-    }, {
+    },
+    {
       "type": "boardgamefamily",
       "id": "91",
       "value": "ValleyGamesClassicLine"
-    }, {
+    },
+    {
       "type": "boardgamedesigner",
       "id": "1",
       "value": "Karl-HeinzSchmiel"
-    }, {
+    },
+    {
       "type": "boardgameartist",
       "id": "12517",
       "value": "MarcusGschwendtner"
-    }, {
+    },
+    {
       "type": "boardgamepublisher",
       "id": "133",
       "value": "HansimGlückVerlags-GmbH"
-    }, {
+    },
+    {
       "type": "boardgamepublisher",
       "id": "2",
       "value": "MoskitoSpiele"
-    }, {
+    },
+    {
       "type": "boardgamepublisher",
       "id": "5382",
       "value": "ValleyGames,Inc."

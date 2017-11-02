@@ -1,16 +1,13 @@
 battlefield_bangkok:
-  api_host: 'https://battlefield-bangkok.myshopify.com'
+  api_host: https://battlefield-bangkok.myshopify.com
   store_name: btf_bkk
-boardgame_geek:
-  api_host: 'https://www.boardgamegeek.com'
-  store_name: bgg
 boarding_time:
-  api_host: 'https://boardingtimegames.com'
+  api_host: https://boardingtimegames.com
   store_name: bdt
 sources:
-  raw_dir: 'public/sources/'
-  formatted_dir: 'public/sources/formatted/'
-
-THAI_BULK_API_URL: 'https://secure.thaibulksms.com/sms_api_test.php'
-THAI_BULK_USERNAME: 'thaibulksms'
-THAI_BULK_PASSWORD: 'thisispassword'
+  raw_dir: public/sources/
+  formatted_dir: public/sources/formatted/
+thai_bulk:
+  api_url: https://secure.thaibulksms.com/sms_api_test.php
+  username: thaibulksms
+  password: thisispassword

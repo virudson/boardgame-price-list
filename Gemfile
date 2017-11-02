@@ -14,10 +14,11 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 
 gem 'config'
+gem 'friendly_id', '~> 5.1.0'
+gem 'money-rails'
 gem 'nokogiri'
 # gem 'nori' XML to hash
 gem 'rest-client'
-gem 'money-rails'
 gem 'nori'
 
 # Use Capistrano for deployment

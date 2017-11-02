@@ -10,18 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921090614) do
+ActiveRecord::Schema.define(version: 20171102110346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string "slug", null: false
+    t.integer "sluggable_id", null: false
+    t.string "sluggable_type", limit: 50
+    t.string "scope"
+    t.datetime "created_at"
+    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
+    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
+    t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
+    t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "genre"
-    t.string "category"
     t.string "slug"
-    t.string "publisher"
-    t.datetime "release_date"
+    t.string "thumbnail"
+    t.string "image"
+    t.integer "genre", default: 0
+    t.integer "min_players", default: 1
+    t.integer "max_players", default: 1
+    t.integer "min_play_time"
+    t.integer "max_play_time"
+    t.integer "min_age"
+    t.date "release_date"
+    t.jsonb "categories", default: {}
+    t.jsonb "publishers", default: {}
+    t.jsonb "source_data", default: {}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,7 +61,7 @@ ActiveRecord::Schema.define(version: 20170921090614) do
     t.string "remark"
     t.text "details"
     t.jsonb "source_data", default: {}
-    t.datetime "latest_update_at", default: "2017-09-23 11:06:03"
+    t.datetime "latest_update_at", default: "2017-11-02 11:18:11"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_store_items_on_item_id"
